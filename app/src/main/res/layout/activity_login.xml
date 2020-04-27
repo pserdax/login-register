@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#ffff">
+
+<LinearLayout
+    android:id="@+id/llayout0"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Login"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/juraa"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/log_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_background"
+        android:hint="E-mail"
+        android:textColorHint="#646D7E"
+        android:fontFamily="@font/juraa"/>
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textSize="14dp"
+        android:hint="Password"
+        android:textColorHint="#646D7E"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/juraa"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout0"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/juraa"
+            android:text="Don't have an account?"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/text_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:textColor="#000"
+            android:fontFamily="@font/juraa"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        />
+
+
+</LinearLayout>
+
+</RelativeLayout>
